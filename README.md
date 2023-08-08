@@ -7,12 +7,15 @@
     <br>
 </p>
 
-[![Model License](https://img.shields.io/badge/Model%20License-GPL_v3.0-green.svg)]()
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-red.svg)]()
-![](https://img.shields.io/github/last-commit/ydli-ai/Chinese-ChatLLaMA)
-![](https://img.shields.io/github/commit-activity/m/ydli-ai/Chinese-ChatLLaMA)
-![](https://img.shields.io/github/languages/top/ydli-ai/Chinese-ChatLLaMA)
-![](https://img.shields.io/github/stars/ydli-ai/Chinese-ChatLLaMA?style=social)
+<p align="center">
+    <img src="https://img.shields.io/badge/Model%20License-GPL_v3.0-green.svg">
+    <img src="https://img.shields.io/badge/Code%20License-Apache_2.0-red.svg">
+    <img src="https://img.shields.io/github/last-commit/ydli-ai/Chinese-ChatLLaMA">
+    <img src="https://img.shields.io/github/commit-activity/m/ydli-ai/Chinese-ChatLLaMA">
+    <img src="https://img.shields.io/github/languages/top/ydli-ai/Chinese-ChatLLaMA">
+    <img src="https://img.shields.io/github/stars/ydli-ai/Chinese-ChatLLaMA?style=social">
+</p>
+<br/>
 
 本项目向社区提供**中文对话模型 Linly-ChatFlow 、中文基础模型 Chinese-LLaMA (1-2)、Chinese-Falcon 及其训练数据**。
 
@@ -36,8 +39,11 @@
     <img src="assets/chatflow.jpg" width="80%"/>
     <br>
 </p>
+<br/>
 
 [中文预训练语料](corpus/README.md) | [中文指令精调数据集](instructions/README.md) | [模型量化部署](https://github.com/ProjectD-AI/llama_inference) | [领域微调示例](https://github.com/ProjectD-AI/domain-chatflow)
+
+<br/>
 
 ## 新闻
 + **[2023/7/22]** 🔥 发布 **Chinese-LLaMA-2 (7B、13B)** 模型，基于混合语料训练，[技术文章](https://zhuanlan.zhihu.com/p/645103186) - [在线体验](https://huggingface.co/spaces/Linly-AI/Linly-ChatFlow)
@@ -84,35 +90,38 @@
 + [License](#License)
 + [Contributors](#Contributors)
 
+<br/>
 
 ## 模型下载
 
-### 🔥 Linly-Chinese-LLaMA-2
+💡 本项目提供多种模型，推荐使用最新的 **Linly-Chinese-LLaMA-2** 模型
 
-LLaMA2 扩充中文词表，在混合语料上增量预训练，[训练细节和测评](https://zhuanlan.zhihu.com/p/645103186)
+### 💥 **Linly-Chinese-LLaMA-2**
 
-模型仍在迭代中，定期更新模型权重。
+- 模型特点：使用 LLaMA2 扩充中文词表，在混合语料上进行增量预训练，**模型仍在迭代中，将定期更新模型权重**。
+- 实现细节：[训练细节和测评](https://zhuanlan.zhihu.com/p/645103186)
 
 | 模型下载                                                                                | 分类        | 训练数据 | 训练序列长度 | 版本   | 更新时间      |
 |-------------------------------------------------------------------------------------|-----------|------|--------|------|-----------| 
 | [Chinese-LLaMA-2-7B (hf格式)](https://huggingface.co/Linly-AI/Chinese-LLaMA-2-7B-hf)  | 语言模型/对话模型 | 混合语料 | 2048   | v0.1 | 2023.7.22 |
 | [Chinese-LLaMA-2-13B (hf格式)](https://huggingface.co/Linly-AI/Chinese-LLaMA-2-13B-hf) | 语言模型/对话模型 | 混合语料 | 2048   | v0.1 | 2023.7.24 |
 
+<br/>
 
-### Linly-Chinese-Falcon
+### ⭐ Linly-Chinese-Falcon
 
-Chinese-Falcon 模型在 Falcon 基础上扩充中文词表，在中英文数据上增量预训练。
-模型以 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 协议开源，支持商业用途。[模型实现和训练细节](https://zhuanlan.zhihu.com/p/636994073)
+- 模型特点： Chinese-Falcon 模型在 Falcon 基础上扩充中文词表，在中英文数据上增量预训练。模型以 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 协议开源，支持商业用途。
+- 实现细节：[模型实现和训练细节](https://zhuanlan.zhihu.com/p/636994073)
 
 | 模型下载                                                                          | 分类  | 训练数据     | 训练序列长度 | 版本   | 更新时间      |
 |-------------------------------------------------------------------------------|-----|----------|--------|------|-----------| 
 | [Chinese-Falcon-7B (hf格式)](https://huggingface.co/Linly-AI/Chinese-Falcon-7B) | 基础模型 | 50G 通用语料 | 2048   | v0.2 | 2023.6.15 |
 
+<br/>
 
+### ⭐ Linly-Chinese-LLaMA
 
-### Linly-Chinese-LLaMA
-
-Linly-Chinese-LLaMA 系列模型基于 LLaMA 权重和词表，在中文数据上增量预训练。
+- 模型特点：Linly-Chinese-LLaMA 系列模型基于 LLaMA 权重和词表，在中文数据上增量预训练。
 
 **使用须知** ⚠️  LLaMA 原始模型权重基于 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) 协议，仅供研究使用，不能用于商业目的。
 请确认在已[获得许可](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform?usp=send_form)的前提下使用以下模型权重。
@@ -126,33 +135,39 @@ Linly-Chinese-LLaMA 系列模型基于 LLaMA 权重和词表，在中文数据�
 | [Chinese-LLaMA-33B (hf格式)](https://huggingface.co/P01son/Linly-Chinese-LLaMA-33b-hf)  | 基础模型 | 30G 通用语料  | 512    | v1.0 | 2023.4.27 | 
 
 
-🤗 **HuggingFace模型**  
+**HuggingFace模型**🤗  
 项目中提供 [转换脚本](./scripts/convert_llama_from_tencentpretrain_to_hf.py)，支持 TencentPretrain 格式与 Huggingface 格式互转。详细使用方法参见 ➡️ [Huggingface格式转换](https://github.com/CVI-SZU/Linly/wiki/Huggingface%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2) ⬅️ 。
 
-### Linly-OpenLLaMA
+<br/>
 
-Linly-OpenLLaMA 模型在大规模中英文语料上**从头训练**词表和模型参数，与原始 LLaMA 模型结构和使用方法一致。
-模型以 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 协议开源，支持商业用途。[训练细节](https://github.com/CVI-SZU/Linly/wiki/Linly-OpenLLaMA)
+### ⭐ Linly-OpenLLaMA
+
+- 模型特点：Linly-OpenLLaMA 模型在大规模中英文语料上**从头训练**词表和模型参数，与原始 LLaMA 模型结构和使用方法一致。模型以 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 协议开源，支持商业用途。
+- 实现细节：[训练细节](https://github.com/CVI-SZU/Linly/wiki/Linly-OpenLLaMA)
 
 | 模型下载                                                           | 分类  | 训练数据      | 训练序列长度 | 版本   | 更新时间      |
 |----------------------------------------------------------------|-----|-----------|--------|------|-----------| 
 | [OpenLLaMA-13B](https://huggingface.co/Linly-AI/OpenLLaMA-13B) | 基础模型 | 100G 通用语料 | 2048   | v0.1 | 2023.5.29 |
 
+<br/>
+
 ## 生成示例
+
+💡 生成示例展示 **Linly-Chinese-LLaMA-2** 模型效果
 
 #### 1. 信息提取
 
-<img src="assets/cases/case1.jpg" width="400" >
+<img src="assets/cases/case1.jpg" width="600" >
 
 #### 2. 代码生成
-<img src="assets/cases/case2.jpg" width="400" >
+<img src="assets/cases/case2.jpg" width="600" >
 
 #### 2. 知识问答
-<img src="assets/cases/case3.jpg" width="400" >
+<img src="assets/cases/case3.jpg" width="600" >
 
-### 在线试用
+### 💡 在线试用
 
-在线 demo 可以访问 [Linly-ChatFlow](https://huggingface.co/spaces/Linly-AI/Linly-ChatFlow) 体验
+在线 demo 可在 [Linly-ChatFlow](https://huggingface.co/spaces/Linly-AI/Linly-ChatFlow) 体验
 
 <img src="assets/huggingface_demo.jpg"/>
 
@@ -162,19 +177,21 @@ Linly-OpenLLaMA 模型在大规模中英文语料上**从头训练**词表和模
 curl -H 'Content-Type: application/json' https://P01son-52nfefhaaova.serv-c1.openbayes.net -d '{"question": "北京有什么好玩的地方？"}'
 ```
 
-感谢 [HuggingFace](https://huggingface.co/) 和 [OpenBayes](https://openbayes.com/) 提供用于在线体验的计算资源。
+<br/>
+
+特别感谢 [HuggingFace](https://huggingface.co/) 和 [OpenBayes](https://openbayes.com/) 提供的在线体验计算资源。
 
 ![](assets/sponsors/logo-1.png)
 ![](assets/sponsors/logo-2.png)
 
 
-
 如果想在自己的环境上构造交互式demo，欢迎关注和star项目：[llama_inference](https://github.com/ProjectD-AI/llama_inference)
 
+<br/>
 
 ## 快速开始
 
-本章节介绍 TencentPretrain 格式模型权重的使用方法（不适用hf格式权重）。
+本章节介绍 TencentPretrain 格式模型权重的使用方法（不适用最新版**Linly-Chinese-LLaMA-2**模型的hf格式权重，最新版模型使用方法参见huggingface页面）。
 
 下载预训练模型权重，安装依赖，测试环境: py3.8.12 cuda11.2.2 cudnn8.1.1.33-1 torch1.9.0 bitsandbytes0.37.2
 
@@ -408,6 +425,7 @@ Linly-ChatFlow 完全基于社区开放语料训练，内容未经人工修正�
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CVI-SZU/Linly&type=Date)](https://star-history.com/#CVI-SZU/Linly&Date)
+
 ## TODO List
 
 - [x] HuggingFace 转换脚本和权重上传
