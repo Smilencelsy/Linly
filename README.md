@@ -1,5 +1,11 @@
 
-## 中文 LLaMA1-2 & OpenLLaMA & Falcon 大模型
+## 中文 LLaMA1-2 & Linly-OpenLLaMA & Falcon 大模型
+
+<p align="center">
+    <br>
+    <img src="assets/linly_logo.png" width="700"/>
+    <br>
+</p>
 
 [![Model License](https://img.shields.io/badge/Model%20License-GPL_v3.0-green.svg)]()
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-red.svg)]()
@@ -8,29 +14,33 @@
 ![](https://img.shields.io/github/languages/top/ydli-ai/Chinese-ChatLLaMA)
 ![](https://img.shields.io/github/stars/ydli-ai/Chinese-ChatLLaMA?style=social)
 
-<img src="assets/logo.jpg" width="320" hegiht="400" align=left />
-
 本项目向社区提供**中文对话模型 Linly-ChatFlow 、中文基础模型 Chinese-LLaMA (1-2)、Chinese-Falcon 及其训练数据**。
+
 模型基于 [TencentPretrain](https://github.com/Tencent/TencentPretrain) 预训练框架全参数训练（Full-tuning）。
-中文基础模型以 LLaMA 和 Falcon 为底座，利用中文和中英平行增量预训练，将它在英文上语言能力迁移到中文上。进一步，项目汇总了目前公开的多语言指令数据，对中文模型进行了大规模指令跟随训练，实现了 Linly-ChatFlow 对话模型。
 
-此外，本项目还公开从头训练的 [**Linly-OpenLLaMA**](https://github.com/CVI-SZU/Linly/wiki/Linly-OpenLLaMA) 模型，包含 **3B、7B、13B** 规模，在 1TB 中英文语料预训练，针对中文优化字词结合tokenizer，模型以 Apache 2.0 协议公开。
+中文基础模型以 LLaMA 和 Falcon 为底座，使用中文和中英平行语料进行增量预训练，将其在英文上的语言能力扩展到中文上。同时，项目汇总了目前公开的多语言指令数据，对中文模型进行大规模指令跟随训练，实现了 Linly-ChatFlow 对话模型。
+
+此外，本项目开源了从头训练的 [**Linly-OpenLLaMA**](https://github.com/CVI-SZU/Linly/wiki/Linly-OpenLLaMA) 模型，包含 **3B、7B、13B** 规模，在 1TB 中英文语料上进行预训练，针对中文优化了字词结合tokenizer，此模型以 Apache 2.0 协议公开。
 
 
 <br/>
+
+**项目内容**
+- 🚀 通过 Full-tuning （全参数训练）获得中文LLaMA、Falcon等模型，提供 TencentPretrain 与 HuggingFace 版本
+- 🚀 模型细节公开可复现，提供数据准备、模型训练和模型评估完整流程代码
+- 🚀 多种量化方案，支持 CUDA 和边缘设备部署推理
+
 <br/>
-
-**项目特点**
-+ 通过 Full-tuning （全参数训练）获得中文LLaMA、Falcon等模型，提供 TencentPretrain 与 HuggingFace 版本
-+ 模型细节公开可复现，提供数据准备、模型训练和模型评估完整流程代码
-+ 多种量化方案，支持 CUDA 和边缘设备部署推理
-
-<img src="assets/chatflow.jpg" width=80% align=center />
+<p align="center">
+    <br>
+    <img src="assets/chatflow.jpg" width="80%"/>
+    <br>
+</p>
 
 [中文预训练语料](corpus/README.md) | [中文指令精调数据集](instructions/README.md) | [模型量化部署](https://github.com/ProjectD-AI/llama_inference) | [领域微调示例](https://github.com/ProjectD-AI/domain-chatflow)
 
-## News
-+ **[2023/7/22]** 🔥发布 Chinese-LLaMA-2 (7B、13B) 模型，基于混合语料训练，[技术文章](https://zhuanlan.zhihu.com/p/645103186) - [在线体验](https://huggingface.co/spaces/Linly-AI/Linly-ChatFlow)
+## 新闻
++ **[2023/7/22]** 🔥 发布 **Chinese-LLaMA-2 (7B、13B)** 模型，基于混合语料训练，[技术文章](https://zhuanlan.zhihu.com/p/645103186) - [在线体验](https://huggingface.co/spaces/Linly-AI/Linly-ChatFlow)
 
 + **[2023/6/14]** 发布中文 Falcon-7B 基础模型，扩充 Falcon 词表并在大规模中文语料增量训练，[技术文章](https://zhuanlan.zhihu.com/p/636994073)
 
